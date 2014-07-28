@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<!--
+    This file is used to declare music configuration depend on specific model
+-->
+<video_configration>
+<!--Selection Log Level 
+	Parms: debug, info, error or none
+	Default value is debug-->
+<log_level data="debug" />
+
+<!--Support RECENT KEY.
+	Default value is 0
+	value define : 0/13/14-->
+<recentkey_value data="0" />
+
+<!--Selection Audio Effect Type 
+	Parms: dolby, virtualSurround or cinemaSound or no_audio_effect 
+	Default value is lge_audio_effect
+	value define : no_audio_effect/lge_audio_effect/virturesurround_effect/cinemasound_effect -->
+<!--extra_dolby_enabled_operator is for enable dolby at lge_audio_effect
+	extra_dolby_disabled_operator`s value is list of operator code and seperator is ,(comma) with no space
+	in case of extra_dolby_enabled_operator is  "lge_audio_effect", extra_dolby_ensabled_operator attribute is valid
+	if extra_dolby_disabled_operator value is "ALL", all operator enable dolby, 
+	if extra_dolby_disabled_operator value is "NONE", all operator disable dolby 
+	operator list : 
+	 
+	OPEN,ATT,SKT,KT,LGU,VZW,RGS,TCL,VIV,TRF,BM,ACG,KDDI,DCM,MPCS,SPR,TEL,CMCC,TMO,NONE,ALL-->
+	<!-- extra_dolby_enabled_country tag used to same operator name but different country 
+		 use under tag to specify operator and country. It is valid when extra_dolby_enabled_operator and enable_operator_country data is same <END/> TAG dont delete-->
+	<!--<enable_operator_country data="DCM" extra_dolby_enable_country = "MX"/>-->
+<audio_effect data = "no_audio_effect" />
+<!--Enable or Disable divx.
+	Default value is support_divx
+	profile_value define : no_support_divx/support_divx/mobile/mobiletheater-->
+	<!--<disable_operator_country data="DCM" extra_divx_disable_country = "JP"/>-->
+	<!-- extra_divx_disable_country, that country is enable DIVX-->
+<divx data = "support_divx" />
+<!--Support for Gesture Guide.
+	Default value is false-->
+<no_support_gesture_guide data="false" />
+<!--Support for Gesture.
+	Default value is false-->
+<no_support_gesture data="false" />
+<!--Enable or Disable MultiThread thumbnail.
+	Default value is false-->
+<multithread_thumb data="true" />
+<!--Support for ListMenu Key.
+	Default value is false-->
+<no_support_listmenu_key data="false" />
+<!--Support for HDMI.
+	Default value is false-->
+<no_support_hdmi data="false" />
+<!--Support HDMI Audio.
+	Default value is false-->
+<support_hdmi_audio data="false" />
+<!--Enable or Disable zoom gesture.
+	Default value is false-->
+<no_support_zoom_gesture data="false" />
+<!--Support LANDSCAPE_MODE_ONLY_SUPPORTED_IN_HDMI.
+	Default value is false-->
+<hdmi_with_only_landscape_mode data="false" />
+<!--Support DSDR
+	Default value is false-->
+<support_dsdr data="false" />
+<!--Support NUMERIC_SORT_SUPPORT
+	Default value is false-->
+<support_numeric_sort data="true" />
+<!--Support OVERLAY_SUPPORT
+	Default value is false-->
+<no_support_overay_model data="false" />
+<!--Support AUDIOZOOM_SUPPORT
+	Default value is false-->
+<support_audio_zoom data="false" />
+<!--Support IS_RMS_SUPPORTED
+	Default value is false-->
+<support_rms data="true" />
+<!--Support IS_WFD_DLNA_CONVERT
+	Default value is false-->
+<support_wfd_dlna_convert data="true" />
+<!--Support IS_EXCEPTION_MODEL_OF_ENTRY_CALLING
+	Default value is false-->
+<exception_model_of_entry_calling data="true" />
+<!--Support IS_ENHVIDEO_SPEED_CTRL
+	Default value is false-->
+<enhvideo_speed_ctrl data="false" />
+<!--Support IS_ENHVIDEO_FINGERTIP_PREVIEW_SEEKBAR
+	Default value is false-->
+<enhvideo_fingertip_preview_seekbar data="false" />
+<!--Support IS_ENHVIDEO_THUMBNAIL_PLIST
+	Default value is false-->
+<enhvideo_thumbnail_list data="false" />
+<!--Support IS_SLIMPORT
+	Default value is false-->
+<support_sllimport data="false" />
+<!--Support IS_HARDKEYLESS_SUPPORTED
+	Default value is false-->
+<support_hardkeyless data="false" />
+<!--Support IS_VIDEO_AUTO_OFF_SUPPORT 
+	Default value is false-->
+<support_video_auto_off data="true" />
+<!--Support IS_NEW_DSDP_FRAMEWORK 
+	Default value is false-->
+<new_dsdp_framework data="false" />
+<!--Support IS_SMARTTRACKING_SUPPORT 
+	Default value is false-->
+<support_smart_tracking data="false" />
+<!--Support IS_FILELOCK_FEAT_SUPPORTED 
+	Default value is false-->
+<support_filelock data="false" />
+<!--Support IS_MULTIPLE_AUDIOTRACKS 
+	Default value is false-->
+<support_multiple_audiotracks data="true" />
+<!--Support IS_TIMEDTEXT_SUPPORTED 
+	Default value is false-->
+<support_timedtext_tracks data="false" />
+<!--Support IS_SPLIT_VIEW_SUPPORTED 
+	Default value is false-->
+<support_split_view data="false" />
+<!--Support IS_SMALL_SIZE_PLAY_CONTROL 
+	Default value is false-->
+<support_small_size_play_control data="false" />
+<!--Support IS_SUPPORT_ONEHANDEDOPERATION 
+	Default value is false-->
+<support_one_handed_operation data="false" />
+<!--Support IS_SCREEN_ROTATION_SUPPORTED 
+	Default value is false-->
+<support_screen_rotation data="true" />
+<!--Support IS_SUPPORT_LIST_PINCH 
+	Default value is false-->
+<support_list_pinch data="false" />
+<!--Support IS_SUPPORT_TO_DO_AFTER_PLAY 
+	Default value is false-->
+<support_to_do_after_play data="true" />
+<!--Support IS_SUPPORT_DUAL_SPEAKER 
+	Default value is false-->
+<support_dual_speaker data="false" />
+<!--Support IS_SUPPORT_PLAY_ON_LOCKSCREEN 
+	Default value is false-->
+<support_play_on_lockscreen data="true" />
+<!--Support IS_SUPPORT_SMARTVIDEO 
+	Default value is false-->
+<support_smartvideo data="true" />
+<!--Support IS_VZW_CLOUD_SUPPORT 
+	Default value is false-->
+<support_vzw_cloud data="false" />
+</video_configration>
+

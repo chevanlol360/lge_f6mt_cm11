@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+<!DOCTYPE MediaPlayers [
+<!ELEMENT MediaPlayers (Local,Network)>
+<!ELEMENT Local (MediaPlayer*)>
+<!ELEMENT Network (MediaPlayer*)>
+<!ELEMENT MediaPlayer (Type*,Quirk*)>
+<!ATTLIST MediaPlayer name CDATA #REQUIRED>
+<!ATTLIST MediaPlayer type CDATA>
+<!ELEMENT Type EMPTY>
+<!ATTLIST Type name CDATA #REQUIRED>
+<!ELEMENT Quirk EMPTY>
+<!ATTLIST Quirk name CDATA #REQUIRED>
+]>
+
+There's a simple and a complex syntax to declare the availability of a
+media codec:
+
+A codec that properly follows the OpenMax spec and therefore doesn't have any
+quirks and that only supports a single content type can be declared like so:
+
+    <MediaPlayer name="OMX.foo.bar" type="something/interesting" />
+
+If a codec has quirks OR supports multiple content types, the following syntax
+can be used:
+
+    <MediaPlayer name="OMX.foo.bar" >
+        <Type name="something/interesting" />
+        <Type name="something/else" />
+        ...
+        <Quirk name="requires-allocate-on-input-ports" />
+        <Quirk name="requires-allocate-on-output-ports" />
+        <Quirk name="output-buffers-are-unreadable" />
+    </MediaPlayer>
+
+Only the three quirks included above are recognized at this point:
+
+"requires-allocate-on-input-ports"
+    must be advertised if the component does not properly support specification
+    of input buffers using the OMX_UseBuffer(...) API but instead requires
+    OMX_AllocateBuffer to be used.
+
+"requires-allocate-on-output-ports"
+    must be advertised if the component does not properly support specification
+    of output buffers using the OMX_UseBuffer(...) API but instead requires
+    OMX_AllocateBuffer to be used.
+
+"output-buffers-are-unreadable"
+    must be advertised if the emitted output buffers of a decoder component
+    are not readable, i.e. use a custom format even though abusing one of
+    the official OMX colorspace constants.
+    Clients of such Local will not be able to access the decoded data,
+    naturally making the component much less useful. The only use for
+    a component with this quirk is to render the output to the screen.
+    Audio Local MUST NOT advertise this quirk.
+    Video Local that advertise this quirk must be accompanied by a
+    corresponding color space converter for thumbnail extraction,
+    matching surfaceflinger support that can render the custom format to
+    a texture and possibly other code, so just DON'T USE THIS QUIRK.
+
+-->
+
+<MediaPlayers>
+    <Locals>
+        <MediaPlayer key="audio/mpeg" value="9101" />
+        <MediaPlayer key="audio/mp4" value="9101" />
+        <MediaPlayer key="audio/wav" value="9101" />
+        <MediaPlayer key="audio/3gpp" value="9101" />
+        <MediaPlayer key="audio/amr-wb" value="9101" />
+        <MediaPlayer key="application/ogg" value="9101" />
+        <MediaPlayer key="video/ogm" value="9301" />
+        <MediaPlayer key="audio/mp4a-latm" value="9101" />
+        <MediaPlayer key="audio/x-matroska" value="9101" />
+        <MediaPlayer key="audio/midi" value="9102" />
+        <MediaPlayer key="audio/sp-midi" value="9102" />
+        <MediaPlayer key="audio/imelody" value="9102" />
+        <MediaPlayer key="video/mpeg" value="9101" />
+        <MediaPlayer key="video/mp4" value="9101" />
+        <MediaPlayer key="video/mpeg4" value="9101" />
+   <!-- <MediaPlayer key="video/quicktime" value="9101" /> -->
+        <MediaPlayer key="video/mp4v-es" value="9101" />
+        <MediaPlayer key="video/3gpp" value="9101" />
+        <MediaPlayer key="video/3gpp2" value="9101" />
+        <MediaPlayer key="video/x-matroska" value="9101" />
+        <MediaPlayer key="video/webm" value="9101" />
+        <MediaPlayer key="video/mp2ts" value="9101" />
+        <MediaPlayer key="video/avi" value="9101" />
+        <MediaPlayer key="audio/x-mpegurl" value="9101" />
+        <MediaPlayer key="audio/x-scpls" value="9101" />
+        <MediaPlayer key="application/vnd.ms-wpl" value="9101" />
+        <MediaPlayer key="application/x-android-drm-fl" value="9101" />
+        <MediaPlayer key="audio/flac" value="9101" />
+        <MediaPlayer key="video/x-vnd.on2.vp8" value="9101" />
+        <MediaPlayer key="video/avc" value="9101" />
+        <MediaPlayer key="video/raw" value="9101" />
+        <MediaPlayer key="audio/qcelp" value="9101" />
+        <MediaPlayer key="video/wvm" value="9101" />
+        <MediaPlayer key="video/divx" value="9101" />
+		<MediaPlayer key="audio/ac3" value="9301" /> <!-- [G2_KK][kitak.moon@lge.com], 20131107, Add a routine to support an ac3 extension file -->
+    </Locals>
+
+    <Networks>
+        <MediaPlayer key="rtsp" value="9103" />
+        <MediaPlayer key="http" value="9101" />
+        <MediaPlayer key="https" value="9101" />
+        <MediaPlayer key="httplive" value="9103" />
+        <MediaPlayer key="widevine" value="9101" />
+    </Networks>
+</MediaPlayers>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Fallback Fonts
+
+    This file specifies the fonts, and the priority order, that will be searched for any
+    glyphs not handled by the default fonts specified in /system/etc/system_fonts.xml.
+    Each entry consists of a family tag and a list of files (file names) which support that
+    family. The fonts for each family are listed in the order of the styles that they
+    handle (the order is: regular, bold, italic, and bold-italic). The order in which the
+    families are listed in this file represents the order in which these fallback fonts
+    will be searched for glyphs that are not supported by the default system fonts (which are
+    found in /system/etc/system_fonts.xml).
+
+    Note that there is not nameset for fallback fonts, unlike the fonts specified in
+    system_fonts.xml. The ability to support specific names in fallback fonts may be supported
+    in the future. For now, the lack of files entries here is an indicator to the system that
+    these are fallback fonts, instead of default named system fonts.
+
+    There is another optional file in /vendor/etc/fallback_fonts.xml. That file can be used to
+    provide references to other font families that should be used in addition to the default
+    fallback fonts. That file can also specify the order in which the fallback fonts should be
+    searched, to ensure that a vendor-provided font will be used before another fallback font
+    which happens to handle the same glyph.
+
+    Han languages (Chinese, Japanese, and Korean) share a common range of unicode characters;
+    their ordering in the fallback or vendor files gives priority to the first in the list.
+    Language-specific ordering can be configured by adding a BCP 47-style "lang" attribute to
+    a "file" element; fonts matching the language of text being drawn will be prioritised over
+    all others.
+-->
+<familyset>
+    <family>
+        <fileset>
+            <file>DroidNaskhUI-Regular.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>DroidSansEthiopic-Regular.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>DroidSansHebrew-Regular.ttf</file>
+            <file>DroidSansHebrew-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansThaiUI-Regular.ttf</file>
+            <file>NotoSansThaiUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>DroidSansArmenian.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+         <file>DroidSansGeorgian.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansDevanagariUI-Regular.ttf</file>
+            <file>NotoSansDevanagariUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansTamilUI-Regular.ttf</file>
+            <file>NotoSansTamilUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansMalayalamUI-Regular.ttf</file>
+            <file>NotoSansMalayalamUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansBengaliUI-Regular.ttf</file>
+            <file>NotoSansBengaliUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansTeluguUI-Regular.ttf</file>
+            <file>NotoSansTeluguUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansKannadaUI-Regular.ttf</file>
+            <file>NotoSansKannadaUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansKhmerUI-Regular.ttf</file>
+            <file>NotoSansKhmerUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoSansLaoUI-Regular.ttf</file>
+            <file>NotoSansLaoUI-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Gujarati.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Oriya.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Punjabi.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Sinhalese.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_HKSC.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Myanmar.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoColorEmoji.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>DroidSansFallback.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LGSmartGothicKR-Regular.ttf</file>
+            <file>LGSmartGothicKR-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>LG_Emoticon.ttf</file>
+        </fileset>
+    </family>
+</familyset>

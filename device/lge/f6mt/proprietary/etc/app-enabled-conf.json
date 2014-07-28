@@ -1,0 +1,60 @@
+{"ApplicationEnabledSetting":[
+           {
+                     "target_country":"------ default ------",
+                     "sim.mcc":"",
+                     "pkglist":[          
+                                {"path":"/system/vendor/carrier/system/RemoteCallbin.apk", "type":"system_app"},
+				                {"path":"/system/vendor/carrier/system/rspermlge.apk", "type":"system_app"}
+                                ]
+           },
+           {
+                     "target_country":"------ Testbed ------",
+                     "sim.mcc":"450",
+                     "pkglist":[          
+                                {"path":"/system/vendor/carrier/system/RemoteCallbin.apk", "type":"system_app"},
+				{"path":"/system/vendor/carrier/system/rspermlge.apk", "type":"system_app"},
+				{"path":"/system/vendor/carrier/system/OrangeUpdates_A1.00.18_signed_aligned.apk", "type":"system_app"},
+				{"path":"/system/vendor/carrier/system/com.orange.contultauorange.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/COS_Romdetection.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/Deezerv3.138.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/OrangeTravelV2-ORO_signed_aligned.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.fotbal.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.orangefilm.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.tvlive.apk", "type":"system_app"}
+                                ]
+           },
+            {
+           "target_country":"------ UK ------",
+           "sim.mcc":"234",
+           "pkglist":[
+           ]
+	   },
+
+	   {
+                     "target_country":"------ ORG ES ------",
+                     "sim.mcc":"214",
+                     "sim.mnc":["03"],
+                     "pkglist":[
+                                {"path":"/system/vendor/carrier/system/OrangeUpdates_A1.00.18_signed_aligned.apk", "type":"system_app"}
+		     ]
+           },
+
+	   {
+                     "target_country":"------ ORG RO ------",
+                     "sim.mcc":"226",
+                     "sim.mnc":["10"],
+                     "pkglist":[
+                                {"path":"/system/vendor/carrier/system/com.orange.contultauorange.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/COS_Romdetection.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/Deezerv3.138.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/OrangeTravelV2-ORO_signed_aligned.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.fotbal.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.orangefilm.apk", "type":"system_app"},
+                                {"path":"/system/vendor/carrier/system/ro.orange.tvlive.apk", "type":"system_app"}
+		     ]
+           }
+
+
+]
+}
+

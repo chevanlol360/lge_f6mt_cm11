@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profiles>
+	<profile>
+		<siminfo operator="CSM" country="GR" mcc="202" mnc="01" />
+		<item name="VMS">+306971000123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="GR" mcc="202" mnc="05" />
+		<item name="VMS">121</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="WIN" country="GR" mcc="202" mnc="10" />
+		<item name="VMS">122</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402001xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402100xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402200xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402300xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402400xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402500xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402600xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402700xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402750xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402800xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402850xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="204" mnc="02" imsi="20402900xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="NL" mcc="204" mnc="04" />
+		<item name="VMS">+31654501233</item>
+		<item name="RVMS">+31654501233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479105xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479106xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479107xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479108xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479109xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479135xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479136xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HollandsNieuwe" country="NL" mcc="204" mnc="04" imsi="2040479137xxxxx" />
+		<item name="VMS">+31637001233</item>
+		<item name="RVMS">+31637001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="KPN" country="NL" mcc="204" mnc="08" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31612001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="RABOMOBIEL" country="NL" mcc="204" mnc="08" spn="Rabo Mobiel" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31612001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="2040807500xxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="2040807501xxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="2040807502xxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="2040807503xxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="2040807504xxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="08" imsi="204080751xxxxxx" />
+		<item name="VMS">+31653079060</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TFT" country="NL" mcc="204" mnc="12" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31626001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="NL" mcc="204" mnc="16" />
+		<item name="VMS">+31624001233</item>
+		<item name="RVMS">+31624001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BEN" country="NL" mcc="204" mnc="16" spn="Ben NL" />
+		<item name="VMS">+31624001233</item>
+		<item name="RVMS">+31624001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Upc" country="NL" mcc="204" mnc="18" />
+		<item name="VMS">+316801903500</item>
+		<item name="RVMS">+31680191233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="NL" mcc="204" mnc="20" />
+		<item name="VMS">+31624001233</item>
+		<item name="RVMS">+31624001233</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="PXN" country="BE" mcc="206" mnc="01" />
+		<item name="VMS">+32475151230</item>
+		<item name="RVMS">+32475151230</item>
+		<item name="ECC_list">100,101,105,110</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="FR" mcc="206" mnc="01" gid="524D4F31" />
+		<item name="VMS">888</item>
+		<item name="RVMS">888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TELENET" country="BE" mcc="206" mnc="05" />
+		<item name="VMS">+32468115555</item>
+		<item name="RVMS">+32468115555</item>
+		<item name="ECC_list">100,101,105,110</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="MOBISTAR" country="BE" mcc="206" mnc="10" />
+		<item name="VMS">5555</item>
+		<item name="RVMS">+32495955550</item>
+		<item name="ECC_list">100,101</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BAS" country="BE" mcc="206" mnc="20" />
+		<item name="VMS">1933</item>
+		<item name="RVMS">+32486191933</item>
+		<item name="ECC_list">100,101</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORG" country="FR" mcc="208" mnc="01" />
+		<item name="VMS">888</item>
+		<item name="RVMS">+33608080808</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CARREFOUR" country="FR" mcc="208" mnc="01" gid="33633437" />
+		<item name="VMS">888</item>
+		<item name="RVMS">888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NRJ" country="FR" mcc="208" mnc="01" gid="4E524A31" />
+		<item name="VMS">888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="FR" mcc="208" mnc="01" gid="524D4F31" />
+		<item name="VMS">888</item>
+		<item name="RVMS">888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SFR" country="FR" mcc="208" mnc="10" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Coriolis" country="FR" mcc="208" mnc="10" gid="12" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="LECLERC" country="FR" mcc="208" mnc="10" spn="LeclercMobile" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="LA POSTE MOBILE" country="FR" mcc="208" mnc="10" gid="4C504D" />
+		<item name="VMS">123</item>
+		<item name="RVMS">0033612000123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NRJ" country="FR" mcc="208" mnc="10" gid="4E524A31" />
+		<item name="VMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="FREE" country="FR" mcc="208" mnc="15" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BYT" country="FR" mcc="208" mnc="20" />
+		<item name="VMS">+33660660001</item>
+		<item name="RVMS">+33660660001</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="FR" mcc="208" mnc="23" gid="524D4F31" />
+		<item name="VMS">888</item>
+		<item name="RVMS">888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NRJ" country="FR" mcc="208" mnc="26" gid="4E524A31" />
+		<item name="VMS">777</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="ES" mcc="214" mnc="01" />
+		<item name="VMS">177</item>
+		<item name="RVMS">177</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORANGE" country="ES" mcc="214" mnc="03" />
+		<item name="VMS">242</item>
+		<item name="RVMS">+34656242242</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Carrefour" country="ES" mcc="214" mnc="03" imsi="2140352xxxxxxxx" />
+		<item name="VMS">242</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EUSKALTEL" country="ES" mcc="214" mnc="03" gid="0008" />
+		<item name="VMS">2242</item>
+		<item name="RVMS">+34688688242</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EUSKALTEL" country="ES" mcc="214" mnc="03" imsi="2140359xxxxxxxx" />
+		<item name="VMS">2242</item>
+		<item name="RVMS">+34688688242</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="YGS" country="ES" mcc="214" mnc="04" />
+		<item name="VMS">+34633633633</item>
+		<item name="RVMS">+34633633633</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EROSKI_MOVIL" country="ES" mcc="214" mnc="06" imsi="2140606xxxxxxxx" />
+		<item name="VMS">22177</item>
+		<item name="RVMS">+34662828662</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="R_CABLE" country="ES" mcc="214" mnc="06" imsi="2140612xxxxxxxx" />
+		<item name="VMS">22277</item>
+		<item name="RVMS">+34698111277</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TELECABLE" country="ES" mcc="214" mnc="06" imsi="2140613xxxxxxxx" />
+		<item name="VMS">333</item>
+		<item name="RVMS">+34684684333</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TLF" country="ES" mcc="214" mnc="07" />
+		<item name="VMS">123</item>
+		<item name="RVMS">+34609123123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="JAZZTEL" country="ES" mcc="214" mnc="07" spn="JAZZTEL" />
+		<item name="VMS">1222</item>
+		<item name="RVMS">+34640001222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ONO" country="ES" mcc="214" mnc="18" />
+		<item name="VMS">1214</item>
+		<item name="RVMS">+34901401214</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="KPN" country="ES" mcc="214" mnc="19" />
+		<item name="VMS">1213</item>
+		<item name="RVMS">+34644001213</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="JAZZTEL" country="ES" mcc="214" mnc="21" spn="JAZZTEL" />
+		<item name="VMS">1222</item>
+		<item name="RVMS">+34640001222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Telenor" country="HU" mcc="216" mnc="01" />
+		<item name="VMS">+36209400404</item>
+		<item name="RVMS">+36209400404</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="HU" mcc="216" mnc="30" />
+		<item name="VMS">+36309888444</item>
+		<item name="RVMS">+36309888444</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="HU" mcc="216" mnc="70" />
+		<item name="VMS">170</item>
+		<item name="RVMS">+36709090170</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ERO" country="BA" mcc="218" mnc="03" />
+		<item name="VMS">+387633888</item>
+		<item name="RVMS">+387633888</item>
+		<item name="ECC_IdleMode">122,123,124</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="MTEL" country="BA" mcc="218" mnc="05" />
+		<item name="VMS">+3876555400</item>
+		<item name="RVMS">+3876555400</item>
+		<item name="ECC_IdleMode">122,123,124</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BHT" country="BA" mcc="218" mnc="90" />
+		<item name="VMS">+38761123123</item>
+		<item name="RVMS">+38761123123</item>
+		<item name="ECC_IdleMode">122,123,124</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="HR" mcc="219" mnc="01" />
+		<item name="VMS">+385981511</item>
+		<item name="RVMS">+385981511</item>
+		<item name="ECC_IdleMode">92,93,94,985,987,9155,192,193,194,155,1987</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="HR" mcc="219" mnc="01" spn="bonbon" />
+		<item name="VMS">+385981511</item>
+		<item name="RVMS">+385981511</item>
+		<item name="ECC_IdleMode">92,93,94,985,987,9155,192,193,194,155,1987</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="HR" mcc="219" mnc="02" />
+		<item name="VMS">+385951000222</item>
+		<item name="RVMS">+385951000222</item>
+		<item name="ECC_IdleMode">92,93,94,985,987,9155,192,193,194,155,1987</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="HR" mcc="219" mnc="10" />
+		<item name="VMS">+385917000</item>
+		<item name="RVMS">+385917000</item>
+		<item name="ECC_IdleMode">92,93,94,985,987,9155,192,193,194,155,1987</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TNR" country="RS" mcc="220" mnc="01" />
+		<item name="VMS">+38163909</item>
+		<item name="RVMS">+38163909</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="mts" country="RS" mcc="220" mnc="03" />
+		<item name="VMS">+38164711</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIP" country="RS" mcc="220" mnc="05" />
+		<item name="VMS">+381617777</item>
+		<item name="RVMS">+381617777</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TIM" country="IT" mcc="222" mnc="01" />
+		<item name="VMS">41901</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NOVA" country="IS" mcc="222" mnc="01" imsi="22201309xxxxxxx" />
+		<item name="VMS">+3547701717</item>
+		<item name="RVMS">+3547701717</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="IT" mcc="222" mnc="10" />
+		<item name="VMS">42020</item>
+		<item name="RVMS">+393482002020</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="POSTEMOBILE" country="IT" mcc="222" mnc="10" spn="PosteMobile" />
+		<item name="VMS">427242</item>
+		<item name="RVMS">+393770001252</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="WIN" country="IT" mcc="222" mnc="88" />
+		<item name="VMS">4200</item>
+		<item name="RVMS">+393234200200</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="IT" mcc="222" mnc="99" />
+		<item name="VMS">4133</item>
+		<item name="RVMS">+393933934133</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="FASTWEB" country="IT" mcc="222" mnc="99" spn="FASTWEB" />
+		<item name="VMS">4141</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="RO" mcc="226" mnc="01" />
+		<item name="VMS">+40722033334</item>
+		<item name="RVMS">+40722033334</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CSM" country="RO" mcc="226" mnc="03" />
+		<item name="VMS">177</item>
+		<item name="RVMS">+40766177177</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Digi.Mobil" country="RO" mcc="226" mnc="05" />
+		<item name="VMS">760</item>
+		<item name="RVMS">+40770000760</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CSM" country="RO" mcc="226" mnc="06" />
+		<item name="VMS">177</item>
+		<item name="RVMS">+40766177177</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORANGE" country="RO" mcc="226" mnc="10" />
+		<item name="VMS">555</item>
+		<item name="RVMS">555</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="CZ" mcc="230" mnc="01" />
+		<item name="VMS">+420603123311</item>
+		<item name="RVMS">+420603123311</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="O2" country="CZ" mcc="230" mnc="02" />
+		<item name="VMS">+420602999999</item>
+		<item name="RVMS">+420602999999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="CZ" mcc="230" mnc="03" />
+		<item name="VMS">+420608989898</item>
+		<item name="RVMS">+420608989898</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORG" country="SK" mcc="231" mnc="01" />
+		<item name="VMS">555</item>
+		<item name="RVMS">+421905055550</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="SK" mcc="231" mnc="02" />
+		<item name="VMS">+421903333999</item>
+		<item name="RVMS">+421903333999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="O2" country="SK" mcc="231" mnc="06" />
+		<item name="VMS">+421949999999</item>
+		<item name="RVMS">+421949999999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="O2" country="GB" mcc="234" mnc="10" />
+		<item name="VMS">901</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TESCO MOBILE" country="GB" mcc="234" mnc="10" gid="0A" />
+		<item name="VMS">905</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Giffgaff" country="GB" mcc="234" mnc="10" gid="508" />
+		<item name="VMS">443</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="GB" mcc="234" mnc="15" />
+		<item name="VMS">121</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TALKTALK" country="GB" mcc="234" mnc="15" gid="70" />
+		<item name="VMS">121</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TALKMOBILE" country="GB" mcc="234" mnc="15" gid="C1" />
+		<item name="VMS">121</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TALKTALK" country="GB" mcc="234" mnc="15" gid="70FFFFFF" />
+		<item name="VMS">121</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="GB" mcc="234" mnc="20" />
+		<item name="VMS">+447782333123</item>
+		<item name="RVMS">+447782333123</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ASDA" country="GB" mcc="234" mnc="30" />
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="GB" mcc="234" mnc="30" gid="28000000" />
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EE" country="GB" mcc="234" mnc="33" />
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="GB" mcc="234" mnc="33" gid="28000000" />
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIRGIN MOBILE" country="GB" mcc="234" mnc="38" gid="28000000" />
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="GB" mcc="235" mnc="94" />
+		<item name="VMS">+447782333123</item>
+		<item name="RVMS">+447782333123</item>
+		<item name="ECC_list">999</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TDC" country="DK" mcc="238" mnc="01" imsi="2380101xxxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TDC" country="DK" mcc="238" mnc="01" imsi="2380171xxxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TDC" country="DK" mcc="238" mnc="01" imsi="2380172xxxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TELMORE" country="DK" mcc="238" mnc="01" spn="TELMORE" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TNR" country="DK" mcc="238" mnc="02" />
+		<item name="VMS">+4560500000</item>
+		<item name="RVMS">+4560500000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BIBOB" country="DK" mcc="238" mnc="02" spn="BiBoB" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CBB_MOBIL" country="DK" mcc="238" mnc="02" spn="CBB Mobil" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="DK" mcc="238" mnc="06" />
+		<item name="VMS">+4531133333</item>
+		<item name="RVMS">+4531133333</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TLA" country="DK" mcc="238" mnc="20" />
+		<item name="VMS">+4528184000</item>
+		<item name="RVMS">+4528184000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CALL_ME" country="DK" mcc="238" mnc="20" spn="Call me" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="DLG_TELE" country="DK" mcc="238" mnc="20" spn="DLG Tele" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TLA" country="DK" mcc="238" mnc="20" imsi="2382010xxxxxxxx" />
+		<item name="VMS">+4528184000</item>
+		<item name="RVMS">+4528184000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TLA" country="DK" mcc="238" mnc="20" imsi="2382030xxxxxxxx" />
+		<item name="VMS">+4528184000</item>
+		<item name="RVMS">+4528184000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TLA" country="Sweden" mcc="240" mnc="01" />
+		<item name="VMS">133</item>
+		<item name="RVMS">+46706133133</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="HALEBOP" country="Sweden" mcc="240" mnc="01" imsi="240017xxxxxxxxx" />
+		<item name="VMS">147</item>
+		<item name="RVMS">+46706133133</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="Sweden" mcc="240" mnc="02" />
+		<item name="VMS">333</item>
+		<item name="RVMS">+46735333333</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="H3G" country="Sweden" mcc="240" mnc="04" />
+		<item name="VMS">333</item>
+		<item name="RVMS">+46735333333</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="Sweden" mcc="240" mnc="05" />
+		<item name="VMS">222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="Sweden" mcc="240" mnc="07" />
+		<item name="VMS">222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007602xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007603xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007604xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007605xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007606xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007607xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007608xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007609xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007610xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007611xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007612xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NL" mcc="240" mnc="07" imsi="24007619xxxxxxx" />
+		<item name="VMS">1233</item>
+		<item name="RVMS">+31640192939</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="NO" mcc="240" mnc="07" imsi="2400768xxxxxxxx" />
+		<item name="VMS">47230000</item>
+		<item name="RVMS">+4747230001</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TNR" country="Sweden" mcc="240" mnc="08" />
+		<item name="VMS">888</item>
+		<item name="RVMS">+46708222888</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="Sweden" mcc="240" mnc="24" />
+		<item name="VMS">222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TNR" country="NO" mcc="242" mnc="01" />
+		<item name="VMS">+4791509001</item>
+		<item name="RVMS">+4791509001</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VENTELO" country="NO" mcc="242" mnc="01" imsi="24201700xxxxxxx" />
+		<item name="VMS">+4747471000</item>
+		<item name="RVMS">+4747471000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NET" country="NO" mcc="242" mnc="02" />
+		<item name="VMS">92100000</item>
+		<item name="RVMS">+4792100000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="CHESS" country="NO" mcc="242" mnc="02" imsi="2420256xxxxxxxx" />
+		<item name="VMS">92100000</item>
+		<item name="RVMS">+4792100000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NETWORK" country="NO" mcc="242" mnc="05" />
+		<item name="VMS">+4747919191</item>
+		<item name="RVMS">+4747919191</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="DNA" country="FI" mcc="244" mnc="03" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ELS" country="FI" mcc="244" mnc="05" />
+		<item name="VMS">+35850950777</item>
+		<item name="RVMS">+35850950777</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SLI" country="FI" mcc="244" mnc="05" imsi="2440541xxxxxxxx" />
+		<item name="VMS">+35850950777</item>
+		<item name="RVMS">+35850950777</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="DNA" country="FI" mcc="244" mnc="12" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SLI" country="FI" mcc="244" mnc="21" />
+		<item name="VMS">+35850950777</item>
+		<item name="RVMS">+35850950777</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SON" country="FI" mcc="244" mnc="91" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ONT" country="LT" mcc="246" mnc="01" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BIT" country="LT" mcc="246" mnc="02" />
+		<item name="VMS">1511</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="LT" mcc="246" mnc="03" />
+		<item name="VMS">1522</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="LMT" country="LV" mcc="247" mnc="01" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="LV" mcc="247" mnc="02" />
+		<item name="VMS">606</item>
+		<item name="RVMS">+37129500606</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="BIT" country="LV" mcc="247" mnc="05" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EMT" country="EE" mcc="248" mnc="01" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EMT" country="EE" mcc="248" mnc="01" imsi="24801012xxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EMT" country="EE" mcc="248" mnc="01" imsi="24801013xxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EMT" country="EE" mcc="248" mnc="01" imsi="24801022xxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="EMT" country="EE" mcc="248" mnc="01" imsi="24801023xxxxxxx" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ELS" country="EE" mcc="248" mnc="02" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TL2" country="EE" mcc="248" mnc="03" />
+		<item name="RVMS">+37255500000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="PLS" country="PL" mcc="260" mnc="01" />
+		<item name="VMS">+48601222222</item>
+		<item name="RVMS">+48601222222</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="PL" mcc="260" mnc="02" />
+		<item name="VMS">+48602950000</item>
+		<item name="RVMS">+48602950000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="PL" mcc="260" mnc="02" spn="heyah" />
+		<item name="VMS">+48602950000</item>
+		<item name="RVMS">+48602950000</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORANGE" country="PL" mcc="260" mnc="03" />
+		<item name="VMS">*501</item>
+		<item name="RVMS">+48501501501</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="P4P" country="PL" mcc="260" mnc="06" />
+		<item name="VMS">+48790200200</item>
+		<item name="RVMS">+48790200200</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="POST" country="LU" mcc="270" mnc="01" />
+		<item name="VMS">6280</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="JOIN" country="LU" mcc="270" mnc="016" spn="Join" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TAN" country="LU" mcc="270" mnc="77" />
+		<item name="VMS">700</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORANGE" country="LU" mcc="270" mnc="99" />
+		<item name="VMS">800</item>
+		<item name="RVMS">35150612788660</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SMN" country="IS" mcc="274" mnc="01" />
+		<item name="VMS">1411</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Vodafone" country="IS" mcc="274" mnc="02" />
+		<item name="VMS">1415</item>
+		<item name="RVMS">+3546899099</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NOVA" country="IS" mcc="274" mnc="11" />
+		<item name="VMS">+3547701717</item>
+		<item name="RVMS">+3547701717</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="NOVA" country="IS" mcc="274" mnc="11" imsi="27411309xxxxxxx" />
+		<item name="VMS">+3547701717</item>
+		<item name="RVMS">+3547701717</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SMN" country="IS" mcc="274" mnc="12" imsi="27412xxxxxxxxxx" />
+		<item name="VMS">1411</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VDF" country="CY" mcc="280" mnc="01" />
+		<item name="VMS">123</item>
+		<item name="ECC_list">1460,1401,1407,1410</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Mtn" country="CY" mcc="280" mnc="10" />
+		<item name="VMS">+35796961002</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="M-TEL" country="BG" mcc="284" mnc="01" />
+		<item name="VMS">131</item>
+		<item name="RVMS">131</item>
+		<item name="ECC_list">150,160,166</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VVC" country="BG" mcc="284" mnc="03" />
+		<item name="VMS">+35987110</item>
+		<item name="RVMS">+35987110</item>
+		<item name="ECC_list">150,160,166</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="GLB" country="BG" mcc="284" mnc="05" />
+		<item name="VMS">120</item>
+		<item name="RVMS">120</item>
+		<item name="ECC_list">150,160,166</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Tele Greenland" country="GL" mcc="290" mnc="01" />
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="MK" mcc="294" mnc="01" />
+		<item name="VMS">+38970121212</item>
+		<item name="RVMS">+38970121212</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="One" country="MK" mcc="294" mnc="02" imsi="294020001xxxxxx" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="One" country="MK" mcc="294" mnc="02" imsi="294020002xxxxxx" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="One" country="MK" mcc="294" mnc="02" imsi="294020004xxxxxx" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="One" country="MK" mcc="294" mnc="02" imsi="294020007xxxxxx" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="VIP" country="MK" mcc="294" mnc="03" />
+		<item name="VMS">1222</item>
+		<item name="RVMS">+389771222</item>
+		<item name="ECC_IdleMode">192,193,194</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TNR" country="ME" mcc="297" mnc="01" />
+		<item name="VMS">+3826914077</item>
+		<item name="RVMS">+3826914077</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="TMO" country="ME" mcc="297" mnc="02" />
+		<item name="VMS">+3826714077</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="mtel" country="ME" mcc="297" mnc="03" />
+		<item name="VMS">777</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="DGF" country="FC" mcc="340" mnc="20" />
+		<item name="VMS">660</item>
+		<item name="RVMS">+596696900660</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="ORG" country="RE" mcc="647" mnc="00" />
+		<item name="VMS">800</item>
+		<item name="RVMS">+262692000801</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="OUT" country="RE" mcc="647" mnc="02" />
+		<item name="VMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="SRR" country="RE" mcc="647" mnc="10" />
+		<item name="VMS">123</item>
+		<item name="RVMS">+262692069200</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="Coriolis" country="FR" mcc="647" mnc="10" gid="12" />
+		<item name="VMS">123</item>
+		<item name="RVMS">123</item>
+		<item name="ShortCodeCall">08</item>
+	</profile>
+	<profile>
+		<siminfo operator="OPEN" country="Europe" mcc="" mnc="" default="true">
+			<item name="ShortCodeCall">08</item>
+		</siminfo>
+	</profile>
+</profiles>
+

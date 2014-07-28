@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<!--
+    This file is used to declare streamingplayer configuration depend on specific model
+-->
+<streaming_configration>
+<!--Selection Log Level 
+	Parms: debug, info, error or none
+	Default value is debug-->
+<log_level data="debug" />
+
+<!--Support RECENT KEY.
+	Default value is 0
+	value define : 0/13/14-->
+<recentkey_value data="0" />
+
+<!--Enable or Disable IS_NUPLAYER_EVENT_SUPPORT
+	Default value is false-->
+<support_nuplayer_event data="true" />
+<!--Enable or Disable IS_OVERLAY_SUPPORT.
+	Default value is false-->
+<support_overlay data="false" />
+<!--Enable or Disable IS_NEXTREAMING_MODEL.
+	Default value is false-->
+<nextreaming_model data="true" />
+<!--support for IS_HARDKEYLESS_SUPPORTED.
+	Default value is false-->
+<support_hardkeyless data="false"/>
+<!--support IS_ZOOM_NO_SUPPORT.
+	Default value is false-->
+<no_support_zoom data="false" />
+<!--support native_flow_support data.
+	Default value is false-->
+<native_flow_support data="false" />
+<!--Support IS_SPLIT_VIEW_SUPPORTED 
+	Default value is false-->
+<support_split_view data="false" />
+<!--Support IS_SMALL_SIZE_PLAY_CONTROL 
+	Default value is false-->
+<support_small_size_play_control data="false" />
+<!--Support IS_SUPPORT_ONEHANDEDOPERATION 
+	Default value is false-->
+<support_one_handed_operation data="false" />
+<!--Support IS_START_FLOATING 
+	Default value is false-->
+<start_floating data="false" />
+<!--Support IS_SCREEN_ROTATION_SUPPORTED 
+	Default value is false-->
+<support_screen_rotation data="true" />
+<!--Support IS_SLIMPORT 
+	Default value is false-->
+<support_sllimport data="false" />
+<!--Support IS_SUPPORT_TO_DO_AFTER_PLAY 
+	Default value is false-->
+<support_to_do_after_play data="true" />
+<!--Support IS_PLAY_ON_LOCKSCREEN 
+	Default value is false-->
+<support_play_on_lockscreen data="true" />
+</streaming_configration>

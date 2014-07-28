@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles>
+
+    <FeatureSet>
+        <!-- Message  Start-->
+                <item name="KSC5601Decoding">true</item>
+                <item name="handle8bit">true</item>
+                <item name="copy_submit_to_uicc">true</item>
+                <item name="seperate_processing_sms_uicc">true</item>
+                <item name="retry_to_enable_cb">true</item>
+                <item name="allow_sending_empty_sms">true</item>
+                <item name="support_nl_single_shift">true</item>
+                <item name="support_nl_mcc_list">286</item>
+                <item name="support_emoji_in_concat_message">true</item>
+                <item name="store_mwi_preference">true</item>
+        <!-- Message End-->
+        <!-- Global Spam Message Start -->
+                <item name="OperatorMessage">true</item>
+                <item name="spam">true</item>
+                <item name="GLOBALspam">true</item>
+                <item name="KRWapPushWithSpam">true</item>
+        <!-- Global Spam Message End -->
+        <!-- Telephony Start-->
+	    <item name="MANUAL_SELECTION_WITH_RAT">true</item>
+        <!-- Telephony END-->
+        <!-- Call Start-->
+               <item name="block_private_log_level">0x001</item> 
+        <!-- Call END-->
+    </FeatureSet>
+
+</profiles>
