@@ -37,14 +37,14 @@
 #include <linux/miscdevice.h>
 #include <linux/platform_device.h>
 #include <asm/uaccess.h>
-#include <tspdrv.h>
-#include <ImmVibeSPI.c>
+#include "tspdrv.h"
+#include "ImmVibeSPI.c"
 #if defined(VIBE_DEBUG) && defined(VIBE_RECORD)
-#include <tspdrvRecorder.c>
+#include "tspdrvRecorder.c"
 #endif
 // LGE_CHANGE_S [younglae.kim@lge.com] 2013-02-25, add to control vib_drv of pm8038
 #if !defined(CONFIG_MACH_LGE_L9II_COMMON)
-#include <tspdrv_util.h>
+#include "tspdrv_util.h"
 #include <linux/slab.h>
 
 struct pm8xxx_vib *vib_dev;
@@ -91,9 +91,9 @@ static int g_nMajor = 0;
 
 /* Needs to be included after the global variables because it uses them */
 #ifdef CONFIG_HIGH_RES_TIMERS
-#include <VibeOSKernelLinuxHRTime.c>
+#include "VibeOSKernelLinuxHRTime.c"
 #else
-#include <VibeOSKernelLinuxTime.c>
+#include "VibeOSKernelLinuxTime.c"
 #endif
 
 /* File IO */

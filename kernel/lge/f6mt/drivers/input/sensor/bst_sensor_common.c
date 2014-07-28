@@ -9,7 +9,7 @@
  * @brief       Common APIs for Bosch MEMS sensor drivers
  */
 
-#include <bst_sensor_common.h>
+#include "bst_sensor_common.h"
 
 #define MAX_AXIS_REMAP_TAB_SZ 8    /*P0~P7*/
 static const struct bosch_sensor_axis_remap

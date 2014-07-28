@@ -40,7 +40,7 @@
 #include "../../kernel/arch/arm/mach-msm/lge/fx3/board-fx3.h"
 #include <linux/delay.h>
 #else
-#include <tspdrv_util.h>
+#include "tspdrv_util.h"
 extern struct pm8xxx_vib *vib_dev;
 #endif
 //[LGE_CHANGE_E] 2013.03.13 daewon1004.kim@lge.com l9ii use the pwm mode moter.
