@@ -1,0 +1,618 @@
+# Copyright (c) 2012, Code Aurora Forum. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of Code Aurora Forum, Inc. nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
+
+import init.lge.usb.rc
+
+on early-init
+    mkdir /firmware 0771 system system
+    symlink /data/tombstones /tombstones
+    # for backwards compatibility
+    export EXTERNAL_STORAGE /storage/sdcard0
+    mkdir /storage 0775 root system
+    mkdir /storage/sdcard0 0000 system system
+    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard0 /mnt/sdcard
+    mkdir /storage/external_SD 0000 system system
+
+# LGE_CHANGE_S [younglae.kim@lge.com] 2013-02-25, add immersion solution
+# Begin Immersion changes
+    export VIBE_PIPE_PATH /dev/pipes
+# End Immersion changes
+# LGE_CHANGE_E [younglae.kim@lge.com] 2013-02-25
+
+on emmc-fs
+    wait /dev/block/platform/msm_sdcc.1/by-name/system
+    chmod 0775 /sbin/e2fsck_static
+    exec /sbin/e2fsck_static -fy /dev/block/platform/msm_sdcc.1/by-name/system
+    # LGE_CHANGE_S, [2012-03-21], ilsoo.jung@lge.com, NOT_USE_SYSTEM_REMOUNT  never remount system partition.
+    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system ro barrier=1
+    # LGE_CHANGE_E, [2012-03-21], ilsoo.jung@lge.com, NOT_USE_SYSTEM_REMOUNT  never remount system partition.
+	
+on fs
+    mkdir /mpt 0775 system system
+    mkdir /sns 0771 system system
+    mkdir /persist-lg 0771 system system
+    mount_all fstab.qcom
+	
+	# LGE_UPDATE_START
+    # Executing tune2fs to reserve some region in /data. (80MB)
+    # 2012-02-02 G1-FS@lge.com
+    exec /system/bin/tune2fs -u system -r 20480 /dev/block/platform/msm_sdcc.1/by-name/userdata
+    # LGE_UPDATE_END
+	
+    # Keeping following partitions outside fstab file. As user may not have
+    # these partition flashed on the device. Failure to mount any partition in fstab file
+    # results in failure to launch late-start class.
+
+    wait /dev/block/platform/msm_sdcc.1/by-name/cache
+    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/cache /cache nosuid nodev barrier=1
+
+    wait /dev/block/platform/msm_sdcc.1/by-name/persist
+    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/persist /persist nosuid nodev barrier=1
+
+    wait /dev/block/platform/msm_sdcc.1/by-name/modem
+    mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro uid=1000 gid=1000 shortname=lower dmask=227 fmask=337
+
+
+on post-fs
+   mount ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system ro remount barrier=1
+#LGE_CHANGE_S, deco.park@lge.com, 2012-10-23, last_kmsg Backup
+    exec /system/bin/sh /system/etc/last_kmsg_backup.sh
+# LGE_CHANGE_E, deco.park@lge.com, 2012-10-23, last_kmsg Backup
+
+on boot
+   write /sys/devices/i2c-3/3-0024/cyttsp_update_fw 1
+   write /sys/devices/i2c-3/3-005b/update_fw 1
+   start qcamerasvr
+
+-----------------------------------------------
+# LGE_CHANGE_S [i_atnt][HieednMenu] Add log service, jjh.jang@lge.com, 2011-08-19
+    mkdir /data/logger 0771 system system
+    chown system system /data/logger
+    chmod 0775 /data/logger
+# LGE_CHANGE_E [i_atnt][HieednMenu] Add log service, jjh.jang@lge.com, 2011-08-19
+
+
+# [KPJT] MC R&D-203, s
+# LED Driver Node Owner ?? system À¸?? ????
+#   chown system system /sys/devices/i2c-2/2-0032/led_pattern
+#   chown system system /sys/devices/i2c-2/2-0032/led_blink
+#   chown system system /sys/devices/i2c-2/2-0032/leds/R/brightness
+#   chown system system /sys/devices/i2c-2/2-0032/leds/G/brightness
+#   chown system system /sys/devices/i2c-2/2-0032/leds/B/brightness
+#   chown system system /sys/devices/i2c-2/2-0032/leds/R/led_current
+#   chown system system /sys/devices/i2c-2/2-0032/leds/G/led_current
+#   chown system system /sys/devices/i2c-2/2-0032/leds/B/led_current
+# [KPJT] MC R&D-203, e
+
+
+# LGE_CHANGE_S, 2012-11-30, donghyuk79.park@lge.com, K-PJT
+   chown system system /sys/class/pmic-kpjt/make_patterns/blink_patterns
+   chown system system /sys/class/pmic-kpjt/make_patterns/test_patterns
+   chown system system /sys/class/pmic-kpjt/use_patterns/setting
+# LGE_CHANGE_E, 2012-11-30, donghyuk79.park@lge.com, K-PJT
+
+   chown system system /sys/class/power_supply/battery/block_charging
+
+on post-fs-data
+ 	chown system system /persist-lg
+	chmod 0771 /persist-lg
+	chown system system /mpt
+	chmod 0771 /mpt
+	chown system system /sns
+	chmod 0771 /sns
+	mkdir /sns/cal 0771 system system
+# LGE_CHANGE_S [younglae.kim@lge.com], add to store bmc150 calibration data
+    mkdir /sns/bmc_cal 0771 system system
+# LGE_CHANGE_E [younglae.kim@lge.com]
+	mkdir /data/tombstones 0771 system system
+	mkdir /tombstones/modem 0771 system system
+	mkdir /tombstones/lpass 0771 system system
+	mkdir /tombstones/wcnss 0771 system system
+	mkdir /tombstones/dsps 0771 system system
+#LGE_CHANGE_S 20120130 HiddenMenu, seungin.choi@lge.com
+	mkdir /data/logger 0775 system system
+	exec /system/bin/smpl_count
+#LGE_CHANGE_E 20120130 HiddenMenu, seungin.choi@lge.com
+
+# LGE_CHANGE_S [younglae.kim@lge.com] 2013-02-25, add immersion solution
+# Begin Immersion changes
+    mkdir /dev/pipes 0771 shell shell
+# End Immersion changes
+# LGE_CHANGE_E [younglae.kim@lge.com] 2013-02-25
+
+#LGE_CHANGE_S 2012-04-27, HiddenMenu, seungin.choi@lge.com
+    chmod 0775 /data/logger/LogPropValue.sh
+    chown system system /data/logger/LogPropValue.sh
+#LGE_CHANGE_E 2012-04-27, HiddenMenu, seungin.choi@lge.com
+
+#LGE_CHANGE_S 2012-05-08, LogService, inmo.nam@lge.com
+	mkdir /data/log 0755 system system
+#LGE_CHANGE_E 2012-05-08, inmo.nam@lge.com
+   #LGDRM
+    mkdir /persist-lg/lgdrm 0770 lgdrm lgdrm_acc
+    chown lgdrm lgdrm_acc /persist-lg/lgdrm
+    chmod 0770 /persist-lg/lgdrm
+
+    #Widevine
+    mkdir /persist-lg/widevine 0770 system system
+    chown system system /persist-lg/widevine
+    chmod 0770 /persist-lg/widevine
+    
+    #Secureclock
+    mkdir /persist-lg/secclk 0700 system system
+    chown system system /persist-lg/secclk
+    chmod 0700 /persist-lg/secclk
+
+    #DivX
+    mkdir /persist-lg/multimedia 0770 media divxdrm
+    chown media divxdrm /persist-lg/multimedia
+    chmod 0770 /persist-lg/multimedia
+
+    # create dirs if not exist
+    mkdir /data/lgdrm 0770 lgdrm lgdrm_acc
+# LGE_CHANGE_E For DRM
+# LGE_CHANGE_S For DivxDRM, Nextreaming
+    mkdir /persist-lg/multimedia/nx 0770 media divxdrm
+    chown media divxdrm /persist-lg/multimedia/nx
+    chmod 0770 /persist-lg/multimedia/nx
+
+    mkdir /persist-lg/multimedia/uma 0770 media divxdrm
+    chown media divxdrm /persist-lg/multimedia/uma
+    chmod 0770 /persist-lg/multimedia/uma
+
+    mkdir /persist-lg/multimedia/scnt 0770 media divxdrm
+    chown media divxdrm /persist-lg/multimedia/scnt
+    chmod 0770 /persist-lg/multimedia/scnt
+
+    mkdir /persist-lg/multimedia/scnt/sdadf 0770 media divxdrm
+    chown media divxdrm /persist-lg/multimedia/scnt/sdadf
+    chmod 0770 /persist-lg/multimedia/scnt/sdadf
+# LGE_CHANGE_E For DivxDRM, Nextreaming
+
+# LGE_CHANGE_S [younglae.kim@lge.com] 2012-10-10, add for sensors
+# permissions for PROXIMITY SENSOR
+    chown system system /sys/devices/i2c-12/12-0039/enable_ps_sensor
+    chown system system /sys/devices/i2c-12/12-0039/run_calibration
+
+# permissions for MOTION SENSOR
+    chown system system /sys/class/input/input2/calibration
+    chown system system /sys/class/input/input2/eeprom_writing
+    chown system system /sys/class/input/input2/softreset
+    chown system system /sys/class/input/input2/selftest
+# LGE_CHANGE_E [younglae.kim@lge.com] 2012-10-10
+
+    chown system system /sys/class/timed_output/vibrator/amp
+
+#Battery Fake mode
+	chown system system /sys/devices/platform/msm_ssbi.0/pm8038-core/pm8921-charger/power_supply/battery/pseudo_batt
+	chmod 0660 /sys/devices/platform/msm_ssbi.0/pm8038-core/pm8921-charger/power_supply/battery/pseudo_batt
+
+#Power Test (LG Hidden menu)
+	chown system system /sys/class/power_supply/battery/block_charging
+	chown system system /sys/class/power_supply/battery/capacity
+	chown system system /sys/class/power_supply/battery/charge_type
+	chown system system /sys/class/power_supply/battery/current_max
+	chown system system /sys/class/power_supply/battery/current_now
+	chown system system /sys/class/power_supply/battery/device
+	chown system system /sys/class/power_supply/battery/energy_full
+	chown system system /sys/class/power_supply/battery/ext_pwr
+	chown system system /sys/class/power_supply/battery/health	
+	chown system system /sys/class/power_supply/battery/power
+	chown system system /sys/class/power_supply/battery/present	
+	chown system system /sys/class/power_supply/battery/status
+	chown system system /sys/class/power_supply/battery/subsystem
+	chown system system /sys/class/power_supply/battery/technology
+	chown system system /sys/class/power_supply/battery/temp
+	chown system system /sys/class/power_supply/battery/type
+	chown system system /sys/class/power_supply/battery/valid_batt_id
+	chown system system /sys/class/power_supply/battery/voltage_max_design	
+	chown system system /sys/class/power_supply/battery/voltage_min_design	
+	chown system system /sys/class/power_supply/battery/voltage_now	
+
+#start camera server as daemon
+service qcamerasvr /system/bin/mm-qcamera-daemon
+        class late_start
+        user camera
+        group camera system inet input graphics
+
+service thermald /system/bin/thermald
+   class main
+   user root
+   group root
+
+service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+   user root
+   disabled
+
+service rf4ce /system/bin/rf4ce
+   class main
+   user root
+   group root
+
+service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
+   user system
+   group system
+   disabled
+
+service kickstart /system/bin/qcks -i /firmware/image/
+    oneshot
+    disabled
+
+service mdm_helper /system/bin/mdm_helper
+    class main
+    onrestart setprop ro.service.mdm_helper_restarted "true"
+    disabled
+
+service qrngd /system/bin/qrngd -f
+   class main
+   user system
+   group system
+
+service qseecomd /system/bin/qseecomd
+   class late_start
+   user system
+   group system
+
+# Start kickstart if mdm is detected
+on property:ro.baseband=mdm
+    mkdir /data/qcks 0770 system system
+    start kickstart
+
+# Start up mdm_helper if sglte detected
+on property:ro.baseband=sglte
+    mkdir /data/misc/mdmhelperdata 0700
+    start mdm_helper
+
+service usf_tester /system/bin/usf_tester
+    user system
+    group system inet
+    disabled
+
+service usf_epos /system/bin/usf_epos
+    user system
+    group system inet
+    disabled
+
+service usf_gesture /system/bin/usf_gesture
+    user system
+    group system inet
+    disabled
+
+service usf_p2p /system/bin/usf_p2p
+    user system
+    group system inet
+    disabled
+
+service usf_hovering /system/bin/usf_hovering
+    user system
+    group system inet
+    disabled
+
+service usf-post-boot /system/bin/sh /system/etc/usf_post_boot.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+# 2012.08.24 real-wifi@lge.com[wo0gi] TestMode Daemon for broadcom driver [START]
+service diagd /system/bin/diagd 
+	class late_start
+	user root
+	group radio system
+	disabled
+	oneshot
+	socket lsock_diagd stream 666
+
+on property:wifi_ftm.diagd_start=1
+    start diagd
+
+on property:wifi_ftm.diagd_start=0
+    stop diagd
+
+# 2012.08.24 real-wifi@lge.com[wo0gi] TestMode Daemon for broadcom driver [END]
+
+on property:init.svc.bootanim=stopped
+    start usf-post-boot
+
+service atd /system/bin/atd /dev/ttyGS0 /dev/smd0
+    socket atd stream 0660 system inet
+    disabled
+
+on property:ro.baseband="msm"
+    start atd
+
+# LGE_CHANGE_S [yongk.kim@lge.com] 2012-10-20, Activate chargerlogo
+on chargerlogo_adbd
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 1004
+    write /sys/class/android_usb/android0/idProduct 61FA
+    write /sys/class/android_usb/android0/bDeviceClass 239
+    write /sys/class/android-usb/android0/bDeviceSubClass 2
+    write /sys/class/android-usb/android0/bDeviceProtocol 1
+    write /sys/class/android_usb/android0/f_acm/acm_transports tty
+    write /sys/class/android_usb/android0/f_diag/clients diag
+    write /sys/class/android_usb/android0/functions acm,diag,mass_storage,adb
+    write /sys/class/android_usb/android0/iSerial $ro.serialno
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+
+on chargerlogo
+   stop bootlogo
+   write /sys/module/rpm_resources/enable_low_power/L2_cache 1
+   write /sys/module/rpm_resources/enable_low_power/pxo 1
+   write /sys/module/rpm_resources/enable_low_power/vdd_dig 1
+   write /sys/module/rpm_resources/enable_low_power/vdd_mem 1
+   write /sys/module/pm_8x60/modes/cpu0/power_collapse/suspend_enabled 1
+   write /sys/module/pm_8x60/modes/cpu1/power_collapse/suspend_enabled 1
+   write /sys/module/pm_8x60/modes/cpu0/power_collapse/idle_enabled 1
+   write /sys/class/android_usb/android0/enable 0
+   write /sys/class/android_usb/android0/idVendor 1004
+   write /sys/class/android_usb/android0/idProduct 6300
+   write /sys/class/android_usb/android0/bDeviceClass 0
+   write /sys/class/android_usb/android0/bDeviceSubClass 0
+   write /sys/class/android_usb/android0/bDeviceProtocol 0
+   write /sys/class/android_usb/android0/functions charge_only
+   write /sys/class/android_usb/android0/enable 1
+   exec /sbin/chargerlogo
+# LGE_CHANGE_E [yongk.kim@lge.com] 2012-10-20, Activate chargerlogo
+
+# compass/accelerometer sensor daemon
+service sensord /system/bin/sensord
+    class late_start
+    user root
+    oneshot
+
+# LGE_CHANGE_S [younglae.kim@lge.com] 2013-02-25, add immersion solution
+# Begin Immersion changes
+# TouchSense Player Service
+service immvibed /system/bin/immvibed
+    class main
+    user shell
+    group shell
+    oneshot
+# End Immersion changes
+# LGE_CHANGE_E [younglae.kim@lge.com] 2013-02-25
+
+service time_daemon /system/bin/time_daemon
+   class late_start
+   user root
+   group root
+
+# LGE_CHANGE_S [i_atnt][HieednMenu] Add log service, jjh.jang@lge.com, 2011-08-19
+# LGE_CHANGE_S, 20120108, HiddenMenu Log_service seungin.choi@lge.com
+service logcat-main /system/bin/logcat -v time -b main -f /data/logger/main.log -n 9 -r 4096
+	class late_start
+	disabled
+	oneshot
+
+on property:persist.service.main.enable=1
+	start logcat-main
+
+on property:persist.service.main.enable=0
+	stop logcat-main
+
+service logcat-system /system/bin/logcat -v time -b system -f /data/logger/system.log -n 4 -r 4096
+	class late_start
+	disabled
+	oneshot
+
+on property:persist.service.system.enable=1
+	start logcat-system
+
+# [START_LGE_HiddenMenu] , ADD, sungkyoung.kim ,2012-03-23 , change command from "start" to "stop"
+on property:persist.service.system.enable=0
+	stop logcat-system
+#	start logcat-system
+# [END_LGE_HiddenMenu] , ADD, sungkyoung.kim ,2012-03-23 , change command from "start" to "stop"
+
+service logcat-radio /system/bin/logcat -v time -b radio -f /data/logger/radio.log -n 4 -r 4096
+	class late_start
+	disabled
+	oneshot
+
+on property:persist.service.radio.enable=1
+	start logcat-radio
+
+on property:persist.service.radio.enable=0
+	stop logcat-radio
+
+service logcat-events /system/bin/logcat -v time -b events -f /data/logger/events.log -n 4 -r 4096
+	class late_start
+	disabled
+	oneshot
+
+on property:persist.service.events.enable=1
+	start logcat-events
+
+on property:persist.service.events.enable=0
+	stop logcat-events
+
+service logcat-kernel /system/bin/sh /system/etc/save_kernel_log.sh
+    class late_start
+	disabled
+	oneshot
+
+on property:persist.service.kernel.enable=1
+	start logcat-kernel
+
+on property:persist.service.kernel.enable=0
+	stop logcat-kernel
+
+# LGE_CHANGE_S, taewann.kim@lge.com, HiddenMenu, make packet log dummy file permission 666   
+service make-packetlog /system/bin/sh /system/etc/make_packet_log.sh   
+	class late_start  
+	disabled  
+	oneshot  
+# LGE_CHANGE_E, taewann.kim@lge.com, HiddenMenu, make packet log dummy file permission 666
+
+# LGE_CHANGE_S, [LGE_DATA][TCP_DUMP], gilchan.park@lge.com, 2012-02-16
+service logging_packet /system/xbin/tcpdump -i any -p -C 4 -W 10 -Z root -s 0 -w /data/logger/packet.pcap
+	class late_start
+	disabled
+	oneshot
+
+on property:persist.service.logging_packet=1
+	start make-packetlog 
+	start logging_packet
+
+on property:persist.service.logging_packet=0
+	start make-packetlog 
+	stop logging_packet
+# LGE_CHANGE_E, [LGE_DATA][TCP_DUMP], gilchan.park@lge.com, 2012-02-16
+
+#LGE_CHANGE_S seungin.choi@lge.com, HiddenMenu, Loading LogService Properties
+service cur_prop_val /system/bin/sh /data/logger/LogPropValue.sh
+	class late_start
+	user system
+	oneshot
+#LGE_CHANGE_E, seungin.choi@lge.com, HiddenMenu, Loading LogService Properties
+
+service log_main_ats /system/bin/logcat -v time -b main -f /storage/external_SD/main.log 
+	class late_start
+	disabled
+	oneshot
+
+service log_system_ats /system/bin/logcat -v time -b system -f /storage/external_SD/system.log
+	class late_start
+	disabled
+	oneshot
+
+service log_radio_ats /system/bin/logcat -v time -b radio -f /storage/external_SD/radio.log
+	class late_start
+	disabled
+	oneshot
+
+service log_events_ats /system/bin/logcat -v time -b events -f /storage/external_SD/events.log
+	class late_start
+	disabled
+	oneshot
+
+service log_kernel_ats /system/bin/sh /system/etc/save_kernel_log_ats.sh
+    class late_start
+	disabled
+	oneshot
+
+on property:persist.service.ats.enable=true
+	start log_main_ats
+	start log_system_ats
+	start log_radio_ats
+	start log_events_ats
+	start log_kernel_ats
+
+on property:persist.service.ats.enable=false
+	stop log_main_ats
+	stop log_system_ats
+	stop log_radio_ats
+	stop log_events_ats
+	stop log_kernel_ats
+
+service thermal_enable /system/bin/thermald --config-file /system/etc/thermald-8930.conf
+	class late_start
+	disabled
+	oneshot
+
+service thermal_disable /system/bin/thermald --config-file /system/etc/thermald-8930-empty.conf
+    class late_start
+	disabled
+	oneshot
+
+on property:persist.service.ther.enable=true
+	start thermal_enable
+
+on property:persist.service.ther.enable=false
+	start thermal_disable
+
+on property:persist.service.usb_ther=true
+on property:persist.service.usb_ther=false
+
+#LGE_CHANGE_S 2012.04 lg-msp@lge.com MTS TEAM
+service mtsd /system/bin/mtsd
+	class late_start
+	oneshot
+	socket mtsd.port stream 660 system system
+
+service mtsd_kmsg /system/bin/mtsd_kmsg
+	class late_start
+	disabled
+	oneshot
+
+service mtsd_main /system/bin/mtsd_logcat_main
+	class late_start
+	disabled
+	oneshot
+
+service mtsd_events /system/bin/mtsd_logcat_events
+	class late_start
+	disabled
+	oneshot
+
+service mtsd_radio /system/bin/mtsd_logcat_radio
+	class late_start
+	disabled
+	oneshot
+
+service mtsd_system /system/bin/mtsd_logcat_system
+	class late_start
+	disabled
+	oneshot
+
+service mtsd_fmgr /system/bin/mtsd_file_manager
+	class late_start
+	oneshot
+
+service mtsd_hist /system/bin/mtsd_logcat_filter
+	class late_start
+	disabled
+	oneshot
+
+on property:sys.mts.work=1
+	start mtsd_main
+	start mtsd_kmsg
+	start mtsd_events
+	start mtsd_radio
+	start mtsd_system
+	start mtsd_hist
+
+on property:sys.mts.work=0
+	stop mtsd_main
+	stop mtsd_kmsg
+	stop mtsd_events
+	stop mtsd_radio
+	stop mtsd_system
+	stop mtsd_hist
+#LGE_CHANGE_E 2012.04 lg-msp@lge.com MTS TEAM
+
+# 2013-04-16 SungKyoung-Kim(sungkyoung.kim@lge.com) Add Fake_Battery to maintain battery fake mode after reboot [START]
+service fake_batt /system/bin/sh /data/fake_batt.sh	
+    class late_start
+    user system
+    group system
+    oneshot
+# 2013-04-16 SungKyoung-Kim(sungkyoung.kim@lge.com) Add Fake_Battery to maintain battery fake mode after reboot [END]
