@@ -1,0 +1,7 @@
+#
+# Makefile for the LGE board
+#
+
+# fx3
+obj-$(CONFIG_MACH_MSM8930_FX3) += fx3/
+
