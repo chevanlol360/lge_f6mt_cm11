@@ -239,7 +239,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/test_gemini:system/bin/test_gemini \
     $(LOCAL_PATH)/proprietary/bin/thermald:system/bin/thermald \
     $(LOCAL_PATH)/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-    $(LOCAL_PATH)/proprietary/bin/time_daemon:system/bin/time_daemon \
     $(LOCAL_PATH)/proprietary/bin/usbhub:system/bin/usbhub \
     $(LOCAL_PATH)/proprietary/bin/usbhub_init:system/bin/usbhub_init \
     $(LOCAL_PATH)/proprietary/bin/usf_epos:system/bin/usf_epos \
