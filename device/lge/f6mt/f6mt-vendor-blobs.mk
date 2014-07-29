@@ -80,9 +80,11 @@ PRODUCT_COPY_FILES += \
 # FM
 #PRODUCT_COPY_FILES += \
 
-
 # Time services
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/time_daemon:system/bin/time_daemon \
+    $(LOCAL_PATH)/proprietary/lib/libtime_genoff.so:obj/lib/libtime_genoff.so \
+    $(LOCAL_PATH)/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so
 
 # Radio
 #PRODUCT_COPY_FILES += \
@@ -593,7 +595,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libsurround_proc.so:system/lib/libsurround_proc.so \
     $(LOCAL_PATH)/proprietary/lib/libthermalclient.so:system/lib/libthermalclient.so \
     $(LOCAL_PATH)/proprietary/lib/libtile2linear.so:system/lib/libtile2linear.so \
-    $(LOCAL_PATH)/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     $(LOCAL_PATH)/proprietary/lib/libTimeService.so:system/lib/libTimeService.so \
     $(LOCAL_PATH)/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     $(LOCAL_PATH)/proprietary/lib/libtracking.so:system/lib/libtracking.so \
